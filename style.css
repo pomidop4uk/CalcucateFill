@@ -2,20 +2,23 @@
 /* Общий шрифт для всего что есть на сайте */
 * {
     font-family: Comfortaa;
+    text-align: center;
+
 }
 /* Задний фон и центрирование элементов по центру */
 body {
     background: #ddd;
-    text-align: center;
 }
 /* Добавляю отступы снизу между элементами */
 .all div {
+    max-width: 700px;
+    margin: auto;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 /* Центрирую окошки, убираю изначальную стилистику бордера */
 .first, .second, input {
-    border-radius: 8px;
+    border-radius: 20px;
     border-style: none;
     height: 25px;
 }
@@ -43,4 +46,23 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+/* Адаптивная верстка, увеличение объектов для мобильных телефонов */
+@media (max-width: 400px) {
+    /* Увеличение высоты у инпутов */
+    .first, .second, input {
+        height: 100px;
+    }
+    /* Увеличение высоты у кнопки*/
+    .btn1C {
+        height: 100px;
+    }
+    /* Увеличение размера шрифта у тега <p> */
+    .result1C {
+        font-size: 1.5rem;
+    }
+    body {
+        text-align: center;
+    }
+
 }
