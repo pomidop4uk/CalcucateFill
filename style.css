@@ -59,7 +59,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-button {
+button p{
     color: black
 }
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
