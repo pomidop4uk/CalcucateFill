@@ -59,6 +59,9 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+button {
+    color: black
+}
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
 @media (max-width: 416px) {
     /* Увеличение высоты у инпутов */
