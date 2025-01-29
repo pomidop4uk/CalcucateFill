@@ -7,7 +7,7 @@
 /* Задний фон и отступ сверху*/
 body { 
     background: #ddd;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 /* Добавляю отступы снизу между элементами */
 .all div {
@@ -59,9 +59,14 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-button p{
-    color: black
+.calculateResult {
+    margin-top: 0;
+    background: #eee;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
 }
+
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
 @media (max-width: 416px) {
     /* Увеличение высоты у инпутов */
@@ -89,5 +94,8 @@ button p{
         height: 40px;
         width: 100%;
         margin-bottom: 10px;
+    }
+    .third button p{
+        color: green
     }
 }
