@@ -24,9 +24,9 @@ body {
 }
 /* Увеличиваю окошки в ширину; Увеличение паддинга */
 input {
-    width: 100%;
+    width: 80%;
     padding: 20px;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
 }
 /* Увеличение размера шрифта у абзаца и тега <p> */
@@ -59,12 +59,25 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+/* Стилизация текста "Рассчитать расход" */
 .calculateResult {
     margin-top: 0;
     background: #eee;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
+}
+
+/* Стилизация кнопок */
+.btn1C {
+    border-style: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.third button p{
+    color: green
 }
 
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
@@ -75,7 +88,7 @@ input::-webkit-inner-spin-button {
     }
     /* Увеличение высоты у кнопки*/
     .btn1C {
-        height: 100px;
+        height: 50px;
     }
     /* Увеличение размера шрифта у тега <p> */
     .result1C {
@@ -88,14 +101,6 @@ input::-webkit-inner-spin-button {
     div h4, p{
         font-size: 2rem;
     }
-    .btn1C {
-        border-style: none;
-        border-radius: 20px;
-        height: 40px;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    .third button p{
-        color: green
-    }
+    
+    
 }
