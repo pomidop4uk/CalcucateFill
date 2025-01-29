@@ -5,7 +5,7 @@
     text-align: center;
 }
 /* Задний фон и отступ сверху*/
-body {
+body { 
     background: #ddd;
     margin-top: 100px;
 }
@@ -22,7 +22,6 @@ body {
     border-style: none;
     height: 25px;
 }
-
 /* Увеличиваю окошки в ширину; Увеличение паддинга */
 input {
     width: 100%;
@@ -30,11 +29,10 @@ input {
     font-size: 16px;
     outline: none;
 }
-
+/* Увеличение размера шрифта у абзаца и тега <p> */
 div h4, div p {
     font-size: 1.5rem;
 }
-
 /* Стилистика кнопки */
 .btn1C {
     border-style: none;
@@ -62,7 +60,7 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
-@media (max-width: 400px) {
+@media (max-width: 416px) {
     /* Увеличение высоты у инпутов */
     .first, .second, input {
         height: 100px;
@@ -85,8 +83,8 @@ input::-webkit-inner-spin-button {
     .btn1C {
         border-style: none;
         border-radius: 20px;
-        height: 60px;
+        height: 40px;
         width: 100%;
+        margin-bottom: 10px;
     }
-
 }
