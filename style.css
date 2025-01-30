@@ -50,6 +50,7 @@ div h4, div p {
     opacity: 0.8;
     /* background: #FFFAF0; */
 }
+/* Изменение цвета фона у кнопки при нажатии */
 .btn1C:active {
     background: #eee
 }
