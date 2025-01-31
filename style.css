@@ -82,7 +82,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
-@media (max-width: 416px) {
+@media (max-width: 429px) {
     /* Увеличение высоты у инпутов */
     .first, .second, input {
         height: 100px;

@@ -8,6 +8,7 @@ const price1 = document.getElementById('price')
 const baliz92 = 54.00
 const baliz95 = 58.00
 let whoChooseBtn = ''
+let resultBtnStatus = false
 
 function calculateAIFill (octaneNum, liter) {
     if(octaneNum === baliz92) {
@@ -17,31 +18,14 @@ function calculateAIFill (octaneNum, liter) {
     }
 }
 
-
-// Можно написать функцию чтобы узнавать какая кнопка и от её зависимости, изменять стиль
 btnChoose1.onclick = function () {
     whoChooseBtn = '1'
-
-    btnChoose1.style.border = '2px'
-    btnChoose1.style.borderStyle = 'solid'
-    btnChoose1.style.borderColor = 'black'
-
-    btnChoose2.style.border = 'none'
-    btnChoose2.style.borderStyle = 'none'
-    btnChoose2.style.borderColor = 'none'
-    
+    chooseBtnStyle()
 }
 
 btnChoose2.onclick = function () {
     whoChooseBtn = '2'
-    
-    btnChoose2.style.border = '2px'
-    btnChoose2.style.borderStyle = 'solid'
-    btnChoose2.style.borderColor = 'black'
-
-    btnChoose1.style.border = 'none'
-    btnChoose1.style.borderStyle = 'none'
-    btnChoose1.style.borderColor = 'none'
+    chooseBtnStyle()
 }
 
 function calculate (arg1, arg2) {
@@ -60,24 +44,28 @@ btn.onclick = function () {
         const end1 = calculateAIFill(baliz95, inp1.value)
         price1.textContent = `${end1}/Р`
     }
-    btnChoose2.style.border = 'none'
-    btnChoose2.style.borderStyle = 'none'
-    btnChoose2.style.borderColor = 'none'
+    setResultBtnStatus()
+}
 
-    btnChoose1.style.border = 'none'
-    btnChoose1.style.borderStyle = 'none'
-    btnChoose1.style.borderColor = 'none'
+// Убирает обводку кнопок АИ-92/95 
+function setResultBtnStatus () {
+    resultBtnStatus = true
+    if(resultBtnStatus) {
+        btnChoose2.style.border = 'none'
+        btnChoose1.style.border = 'none'
+    }
 }
 
 function chooseBtnStyle() {
     if(whoChooseBtn === '1') {
-        btnChoose1.onclick = function () {
-        
-    }
-        } else if (whoChooseBtn === '2') {
-        btnChoose1.onclick = function () {
-            btnChoose1.style.background = 'black'
-        }
-    }
+        btnChoose1.style.border = '2px'
+        btnChoose1.style.borderStyle = 'solid'
+        btnChoose1.style.borderColor = 'black'
+        btnChoose2.style.border = 'none'
+    }  else if (whoChooseBtn === '2') {
+        btnChoose2.style.border = '2px'
+        btnChoose2.style.borderStyle = 'solid'
+        btnChoose2.style.borderColor = 'black'
+        btnChoose1.style.border = 'none'
+    } 
 }
-chooseBtnStyle()
