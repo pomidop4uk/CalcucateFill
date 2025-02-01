@@ -29,7 +29,7 @@ btnChoose2.onclick = function () {
 }
 
 function calculate (arg1, arg2) {
-    const result = ((arg1 / arg2) * 100)
+    const result = +((arg1 / arg2) * 100).toFixed(2)
     return result
 }
 
