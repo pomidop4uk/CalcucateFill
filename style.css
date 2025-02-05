@@ -22,7 +22,7 @@ body {
     background: #E6E2DD;
     width: 50%;
     height: 90%;
-    border-radius: 25px;
+    border-radius: 15px;
     padding-bottom: 10px;
 }
 .all p {
@@ -41,7 +41,7 @@ body {
 }
 /* Центрирую окошки, убираю изначальную стилистику бордера */
 .first, .second, input {
-    border-radius: 20px;
+    border-radius: 10px;
     border-style: none;
     height: 25px;
 }
@@ -71,7 +71,7 @@ div h4, button p {
 .btn1C p {
     margin: auto;
     font-size: 15px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 /* Изменение цвета кнопки, при наведении */
 .btn1C:hover{
@@ -124,12 +124,10 @@ input::-webkit-inner-spin-button {
     padding: 0;
 }
 #btn p{
-    color: grey;
-    border: 2px solid rgb(126, 126, 126);
-    border-radius: 15px;
+    color: rgb(188, 188, 188);
     padding: 10px;
+    background: #373A36;
 }
-
 .third {
     display: flex;
     margin-left: 20px;
@@ -138,6 +136,9 @@ input::-webkit-inner-spin-button {
 }
 h4 {
     padding: 20px
+}
+#price {
+    padding-bottom: 10px;
 }
 
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
@@ -158,7 +159,6 @@ h4 {
         height: 30px;
         width: 40%;
     }
-    
     body {
         text-align: center;
     }
