@@ -21,9 +21,10 @@ body {
 .all {
     background: #E6E2DD;
     width: 50%;
-    height: 90%;
+    height: auto;
     border-radius: 15px;
     padding-bottom: 10px;
+    margin-bottom: 30px;
 }
 .all p {
     font-size: 15px;
