@@ -3,18 +3,34 @@
 * {
     font-family: Comfortaa;
     text-align: center;
+    margin: auto;
 }
-/* Задний фон и отступ сверху*/
+/* отступ сверху*/
 body { 
-    background: #ddd;
     margin-top: 20px;
 }
 /* Добавляю отступы снизу между элементами */
 .all div {
     max-width: 700px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     margin-top: 30px;
+}
+.all {
+    background: #eee;
+    width: 50%;
+    height: 100%;
+    border-radius: 25px;
+}
+.all p {
+    font-size: 15px;
+    padding: 10px;
+}
+.all .first, .all .second {
+    margin-top: 50px;
+}
+.all .calculateResult {
+    padding-top: 40px;
 }
 /* Центрирую окошки, убираю изначальную стилистику бордера */
 .first, .second, input {
@@ -22,12 +38,15 @@ body {
     border-style: none;
     height: 25px;
 }
+
 /* Увеличиваю окошки в ширину; Увеличение паддинга */
 input {
-    width: 80%;
+    width: 60%;
     padding: 20px;
     font-size: 14px;
     outline: none;
+    border: 2px solid rgb(187, 186, 186);
+    background: none
 }
 /* Увеличение размера шрифта у абзаца и тега <p> */
 div h4, div p {
@@ -40,20 +59,33 @@ div h4, div p {
     height: 30px;
     width: 30%;
 }
+
 /* Стилизация текста внутри кнопки */
 .btn1C p {
     margin: auto;
     font-size: 15px;
+    border-radius: 20px;
 }
 /* Изменение цвета кнопки, при наведении */
 .btn1C:hover{
     opacity: 0.8;
     /* background: #FFFAF0; */
 }
-/* Изменение цвета фона у кнопки при нажатии */
-.btn1C:active {
-    background: #eee
+/* Удаление обводки у кнопок */
+button {
+    background: none;
+    padding-top: 50px;
+    padding-bottom: 0;
 }
+button:last-child {
+    margin-top: none;
+    padding: none;
+}
+
+/* Изменение цвета фона у кнопки при нажатии */
+/* .btn1C:active {
+    background: #eee
+} */
 /* Убрать стрелки у input - number */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -63,7 +95,6 @@ input::-webkit-inner-spin-button {
 /* Стилизация текста "Рассчитать расход" */
 .calculateResult {
     margin-top: 0;
-    background: #eee;
     text-align: center;
     padding: 10px;
     border-radius: 20px;
@@ -74,33 +105,52 @@ input::-webkit-inner-spin-button {
     border-style: none;
     border-radius: 20px;
     height: 40px;
-    width: 70%;
-    margin-bottom: 10px;
+    width: 35%;
 }
 .third button p{
-    color: green
+    color: green;
+}
+.result button {
+    margin: 20px;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+.third {
+    display: flex;
+    margin-left: 20px;
+    padding: 30px, 0;
+    width: 70%;
+}
+h4 {
+    padding: 20px
 }
 
 /* Адаптивная верстка, увеличение объектов для мобильных телефонов */
 @media (max-width: 429px) {
     /* Увеличение высоты у инпутов */
+    .all {
+        width: 90%;
+        height: 90%;
+    }
     .first, .second, input {
-        height: 100px;
+        height: 50px;
     }
     /* Увеличение высоты у кнопки*/
     .btn1C {
-        height: 50px;
+        height: 30px;
+        width: 40%;
     }
-    /* Увеличение размера шрифта у тега <p> */
-    .result1C {
-        font-size: 1.5rem;
-    }
+    
     body {
         text-align: center;
     }
     /* Увеличение результата */
     div h4, p{
         font-size: 2rem;
+    }
+    .result p {
+        padding-bottom: 20px;
+        font-size: 1.1rem;
     }
     
     
