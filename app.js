@@ -22,7 +22,6 @@ btnChoose1.onclick = function () {
     whoChooseBtn = '1'
     chooseBtnStyle()
 }
-
 btnChoose2.onclick = function () {
     whoChooseBtn = '2'
     chooseBtnStyle()
@@ -55,7 +54,7 @@ function setResultBtnStatus () {
         btnChoose1.style.border = 'none'
     }
 }
-
+// Добавляет обводку, в зависимости от выбранной кнопки
 function chooseBtnStyle() {
     if(whoChooseBtn === '1') {
         btnChoose1.style.border = '2px'

@@ -8,6 +8,8 @@
 /* отступ сверху*/
 body { 
     margin-top: 20px;
+    background: #373A36;
+
 }
 /* Добавляю отступы снизу между элементами */
 .all div {
@@ -17,7 +19,7 @@ body {
     margin-top: 30px;
 }
 .all {
-    background: #eee;
+    background: #E6E2DD;
     width: 50%;
     height: 100%;
     border-radius: 25px;
@@ -108,13 +110,16 @@ input::-webkit-inner-spin-button {
     width: 35%;
 }
 .third button p{
-    color: green;
+    color: #181818;
 }
 .result button {
     margin: 20px;
     padding: 0;
     border-bottom: 1px solid black;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
+
 .third {
     display: flex;
     margin-left: 20px;
