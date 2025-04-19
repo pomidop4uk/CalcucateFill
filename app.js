@@ -5,8 +5,8 @@ const btnChoose1 = document.getElementById('btnChoose1')
 const btnChoose2 = document.getElementById('btnChoose2')
 const result1 = document.getElementById('result')
 const price1 = document.getElementById('price')
-const baliz92 = 54.50
-const baliz95 = 58.50
+const baliz92 = 55.00
+const baliz95 = 59.00
 let whoChooseBtn = ''
 let resultBtnStatus = false
 
